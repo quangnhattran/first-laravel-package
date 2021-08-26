@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Qt\FirstLaravelPackage\Tests;
 
 class ExampleTest extends TestCase
 {

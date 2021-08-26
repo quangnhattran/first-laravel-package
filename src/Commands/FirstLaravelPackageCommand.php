@@ -1,10 +1,10 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Qt\FirstLaravelPackage\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FirstLaravelPackageCommand extends Command
 {
     public $signature = 'skeleton';
 
