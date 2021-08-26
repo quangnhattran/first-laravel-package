@@ -2,9 +2,9 @@
 
 namespace Qt\FirstLaravelPackage;
 
+use Qt\FirstLaravelPackage\Commands\FirstLaravelPackageCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Qt\FirstLaravelPackage\Commands\FirstLaravelPackageCommand;
 
 class FirstLaravelPackageServiceProvider extends PackageServiceProvider
 {
