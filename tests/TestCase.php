@@ -28,9 +28,9 @@ class TestCase extends Orchestra
     {
         config()->set('database.default', 'testing');
 
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_first-laravel-package_table.php.stub';
+
+        $migration = include __DIR__.'/../database/migrations/create_first-package_table.php.stub';
         $migration->up();
-        */
+
     }
 }

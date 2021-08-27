@@ -19,7 +19,7 @@ class FirstLaravelPackageServiceProvider extends PackageServiceProvider
             ->name('first-laravel-package')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_first-laravel-package_table')
+            ->hasMigration('create_first-package_table')
             ->hasCommand(FirstLaravelPackageCommand::class);
     }
 }
