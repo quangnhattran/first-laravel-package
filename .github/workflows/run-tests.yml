@@ -13,7 +13,7 @@ jobs:
       fail-fast: true
       matrix:
         os: [ubuntu-latest, windows-latest]
-        php: [8.0, 7.4]
+        php: [8.0]
         laravel: [8.*]
         stability: [prefer-lowest, prefer-stable]
         include:
@@ -37,6 +37,11 @@ jobs:
         run: |
           echo "::add-matcher::${{ runner.tool_cache }}/php.json"
           echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
+
+      - name: Create database
+        run: |
+          sudo /etc/init.d/mysql start
+          mysql -u root -proot -e 'CREATE DATABASE IF NOT EXISTS laravel_package;'
 
       - name: Install dependencies
         run: |

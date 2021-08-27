@@ -23,7 +23,7 @@ class MyModelTest extends TestCase
     public function test_can_query_json_column()
     {
         $models = DB::table('my_models')
-            ->whereJsonContains('options.language', 'en')
+            ->whereJsonContains('options->language', 'en')
             ->get();
 
         $this->assertCount(0, $models);
