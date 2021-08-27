@@ -34,9 +34,9 @@ jobs:
           coverage: none
 
       - name: Create database
-          run: |
-            sudo /etc/init.d/mysql start
-            mysql -u root -proot -e 'CREATE DATABASE IF NOT EXISTS laravel_package;'
+        run: |
+          sudo /etc/init.d/mysql start
+          mysql -u root -proot -e 'CREATE DATABASE IF NOT EXISTS laravel_package;'
 
       - name: Setup problem matchers
         run: |
